@@ -9,11 +9,41 @@
 <link href='https://fonts.googleapis.com/css?family=Akshar' rel='stylesheet'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style media="screen">
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: red;}
+
     .navbar-inverse {
   background-color:#FFFFFF ;
   text-align: right;
 
- 
+
 }
 .nav-link {
   font-family: 'Montserrat', sans-serif;
@@ -24,7 +54,7 @@
   padding: 0 8px;
   color: #0f23dd;
   text-align: right;
-  
+
 }
 
 a:hover, a:active ,a:visited, a:link{
@@ -47,13 +77,14 @@ text-shadow: 3px 3px 3px #b8cbeb;}
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#analysis">Do-Analysis</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link"  href="#steps">Steps</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#analysis">Analysis</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutapp">AppInfo</a>
+              <a class="nav-link" href="#Sample Analysis">Statistics</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#aboutus">AboutUs</a>
@@ -71,15 +102,35 @@ text-shadow: 3px 3px 3px #b8cbeb;}
     </div>
 
     <div class="container-fluid text-center">
-      <img src="./image/logo1.gif" alt="" class="rounded-circle " style="max-width:30%"><br><br>
+      <img src="./image/logo1.gif" alt="" class="rounded-circle " style="max-width:26%"><br><br>
    <div class="">
 
         <p style="font-size: 20px;color: black;font-family:Akshar;">Have you ever wondered what's going on in your WhatsApp groups?<br />Well, this analyzer might help you find out! With out of the box analytics you may easily discover who's the #1 active person, what's the most common emoji in the group, and weekly activity timeline.Analyze your chats and get first hand data insights!!!</p>
-   
-      </div>
-      <a href="https://whats-analyzer.herokuapp.com/" target="_self" class="nav-link"><button type="button" class="btn btn-outline-primary" style="color: white;background-color: red;height:40px;width:150px">Do Analysis</button></a>
-<br>
 
+      </div>
+<div class="section" id="analysis" style="display: block;text-align: center;background-color: rgb(175, 218, 233);">
+  <h3 style="color:rgb(10, 14, 15);font-family:Audiowide,sans-serif;font-size: 30px; text-shadow: 3px 3px 3px #6399f1">Do Analysis</h3>
+<p style="font-size: 20px;color: black;font-family:Akshar;">
+    <span style="font-size: 25px;color: black;font-family:Akshar;">&#11088;</span>Our app takes 24hr time format If you want to change then, <br>
+  <span style="font-size: 25px;color: black;font-family:Akshar;">&#11088;
+  </span>Go to Settings -> System Settings -> Date and Time -> Use 24hr Format </p>
+  <span style="color:rgb(10, 14, 15);font-family:Audiowide,sans-serif;font-size: 25px; text-shadow: 3px 3px 3px #6399f1">Select the Date format in your Mobile</span><br>
+<br>
+<div class="dropdown">
+<button type="button" class="btn btn-outline-primary dropbtn" style="color: white;font-family:Akshar;background-color: red;height:40px;width:250px">Select Date Format</button>
+<div class="dropdown-content">
+  <a href="https://wca-dmy4.herokuapp.com/">dd/mm/yyyy</a>
+  <a href="https://whats-analyzer.herokuapp.com/">dd/mm/yy</a>
+  <a href="https://whats-analyzer-mdy4.herokuapp.com/">mm/dd/yyyy</a>
+  <a href="https://whats-analyzer-mdy2.herokuapp.com/">mm/dd/yy</a>
+</div>
+</div>
+</div>
+<br>
+<div class="">
+  <img src="./image/image.gif" alt="" class="rounded-circle " style="max-width:20%">
+</div>
+<br>
 </div>
 </div>
 
@@ -87,7 +138,7 @@ text-shadow: 3px 3px 3px #b8cbeb;}
     <div class="section" id="steps" style="display: block;text-align: center;background-color: #fffafa;"><br>
         <h3 style="color:rgb(10, 14, 15);font-family:Audiowide,sans-serif;font-size: 30px; text-shadow: 3px 3px 3px #6399f1">Steps To export chat</h3>
         <p  style="font-size:20px;font-family:Akshar;"><span style="font-size:30px;">&#11088;</span>
-       
+
           Go to WhatsApp in your mobile phone and select the desired group.<br /><span style="font-size:30px;">&#11088;</span>
           Press the context menu <span>&#10247;</span> in the top right corner.<br /><span style="font-size:30px;">&#11088;</span>
         In the context menu, select the "More" item.<br />
@@ -108,15 +159,15 @@ text-shadow: 3px 3px 3px #b8cbeb;}
           <div>
             <img src="./image/four.jpeg" alt="" style="max-width:20%;text-align: center;"><br>
           </div>
-        </p>
+
       </div>
 
 
 <br>
 
-      <div class="section1 container"id="analysis" style="display: block;text-align: center;background-color: rgb(175, 218, 233);"><br>
+      <div class="section1 container"id="Sample Analysis" style="display: block;text-align: center;background-color: rgb(175, 218, 233);"><br>
 
-        <h3 style="color:rgb(10, 14, 15);font-family:Audiowide,sans-serif;font-size: 30px; text-shadow: 3px 3px 3px #6399f1">Sample Analysis</h3>
+        <h3 style="color:rgb(10, 14, 15);font-family:Audiowide,sans-serif;font-size: 30px; text-shadow: 3px 3px 3px #6399f1">Sample Statistics</h3>
         <p face = "Sans-serif" style="font-size:20px;text-align: center;display: block;">
       </p>
       <div class="card-deck container">
@@ -158,14 +209,14 @@ text-shadow: 3px 3px 3px #b8cbeb;}
                       </div><br><br>
       </div>
 
-      
+
 
 
 
 
 <br/>
 
-<div class=" aboutapp container-fluid"  style="display: block; text-align: center;background-color:#FFFFFF">
+<div class=" aboutus container-fluid"  id="aboutus" style="display: block; text-align: center;background-color:#FFFFFF">
   <h3 style="color:rgb(10, 14, 15);font-family:Audiowide,sans-serif;font-size: 30px; text-shadow: 3px 3px 3px #6399f1"id="aboutapp">About our App</h3>
   <p face = "Akshar" style="font-size:20px"> WhatsApp Analyzer means we are analyzing our WhatsApp group activities. It tracks our conversation and analyses how much time we are spending or saying it as “wasting” on WhatsApp. The aim of this article is to provide step by step guide to build our
     own WhatsApp analyzer using python. Here we used different python libraries which help me to extract useful information from raw data. We are a group of university friends. As a part of our University project we built this projectbecause we felt that whatsapp has been a widely used communication
@@ -177,15 +228,15 @@ text-shadow: 3px 3px 3px #b8cbeb;}
 
 
 
-<div class="aboutus container" id=aboutus style="display: block; text-align: center;background-color: rgb(175, 218, 233);"><br>
+<div class="container" style="display: block; text-align: center;background-color: rgb(175, 218, 233);"><br>
 
-<div class="">
+<div class="container">
   <h3 style="color:rgb(10, 14, 15);font-family:Audiowide,sans-serif;font-size: 30px; text-shadow: 3px 3px 3px #6399f1">About Us</h3>
 
 </div>
 <br>
 
-      <div class="card-deck container">
+      <div class="card-deck">
         <div class="card align-items-center container"  style="width: 20rem;">
           <img class="card-img-top " src="./image/shameem.jpeg" alt="Card image cap"  style="max-width:70%;max-height:50%;">
           <div class="card-body">
@@ -222,7 +273,7 @@ text-shadow: 3px 3px 3px #b8cbeb;}
               </div><br><br>
 
     </div>
-  </div>
+
  <br><br>
 
 
